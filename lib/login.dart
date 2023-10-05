@@ -30,6 +30,7 @@ class LoginAppState extends State<LoginStatefulApp>{
     // TODO: implement build
     //throw UnimplementedError();
     return MaterialApp(
+      theme: ThemeData(fontFamily: 'Amble'),
       debugShowCheckedModeBanner: false,
       home:Scaffold(
         appBar: AppBar(
@@ -89,7 +90,7 @@ class LoginAppState extends State<LoginStatefulApp>{
                     decoration: InputDecoration(
                       border: OutlineInputBorder(borderRadius:BorderRadius.circular(5)),
                       focusedBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(3)),
-                      labelText: "Passwoed",
+                      labelText: "Password",
                       prefixIcon: Icon(Icons.lock),
                     ),
                     validator: (passwordinput) {
@@ -135,7 +136,7 @@ class LoginAppState extends State<LoginStatefulApp>{
                         },
                         child: Text(
                            "Login", 
-                        style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 17.0),
+                        style: TextStyle(color: Colors.black, fontWeight: FontWeight.w600, fontSize: 17.0),
                         
                         ),
                         ),

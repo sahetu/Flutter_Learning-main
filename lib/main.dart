@@ -13,7 +13,8 @@ import 'package:my_app/login.dart';
 import 'package:my_app/sqliteDatabaseDemo.dart';
 
 void main() {
-  runApp(SqliteList());
+  //runApp(SqliteList());
+  runApp(LoginApp());
 }
 
 class MyApp extends StatelessWidget {
