@@ -16,7 +16,7 @@ class SqliteDatabaseHelper {
   var password = "password";
 
   Database? db = null;
-  SqliteDatabaseHelper instance = SqliteDatabaseHelper();
+  static final SqliteDatabaseHelper instance = SqliteDatabaseHelper();
 
   Future<Database?> get database async{
     if (db!=null) return db;
@@ -30,7 +30,7 @@ class SqliteDatabaseHelper {
     return await openDatabase(path,version: databaseVersion, onCreate:onCreateMathod);
   }
 
-  Future<Database?> onCreateMathod(Database db, int version) async {
+  Future onCreateMathod(Database db, int version) async {
     await db.execute(
       '''
            CREATE TABLE $tableName(

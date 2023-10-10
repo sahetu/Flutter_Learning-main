@@ -1,2 +1,4 @@
-2023/10/05-11:23:56.861 486c Creating DB C:\Users\defde\AppData\Local\Temp\flutter_tools.afbed3a9\flutter_tools_chrome_device.4f8daf7f\Default\IndexedDB\https_www.youtube.com_0.indexeddb.leveldb since it was missing.
-2023/10/05-11:23:56.866 486c Reusing MANIFEST C:\Users\defde\AppData\Local\Temp\flutter_tools.afbed3a9\flutter_tools_chrome_device.4f8daf7f\Default\IndexedDB\https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/10/10-13:23:54.688 3e6c Reusing MANIFEST C:\Users\defde\AppData\Local\Temp\flutter_tools.37ba8bd3\flutter_tools_chrome_device.1db82925\Default\IndexedDB\https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/10/10-13:23:54.689 3e6c Recovering log #3
+2023/10/10-13:23:54.689 3e6c Reusing old log C:\Users\defde\AppData\Local\Temp\flutter_tools.37ba8bd3\flutter_tools_chrome_device.1db82925\Default\IndexedDB\https_www.youtube.com_0.indexeddb.leveldb/000003.log 
+2023/10/10-13:23:54.715 21b4 Manual compaction at level-0 from '\x00\x02\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x03\x00\x00\x00' @ 0 : 0; will stop at (end)

@@ -49,7 +49,7 @@ class LoginAppState extends State<LoginStatefulApp>{
               children: [
                 Padding(
                   padding: const EdgeInsets.all(8.0),
-                  child: Image.asset("assets/images/Nlogo5.jpg", width: 150, height: 150,),
+                  child: Image.asset("assets/images/plus.png", width: 150, height: 150,),
                 ),
                 Form(
                   key: formkey,
