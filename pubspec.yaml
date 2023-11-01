@@ -41,6 +41,8 @@ dependencies:
   simple_animations: ^5.0.1
   sqflite: ^2.2.8+4
   path_provider: ^2.0.15
+  connectivity_plus: ^5.0.1
+  http: ^0.13.6
 
 dev_dependencies:
   flutter_test:

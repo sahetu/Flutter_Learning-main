@@ -8,12 +8,15 @@ import 'package:my_app/animationList.dart';
 import 'package:my_app/bottomNavigationDemo.dart';
 import 'package:my_app/customList.dart';
 import 'package:my_app/home.dart';
+import 'package:my_app/jsonLogin.dart';
+import 'package:my_app/jsonSignup.dart';
 import 'package:my_app/list.dart';
 import 'package:my_app/login.dart';
 import 'package:my_app/sqliteDatabaseDemo.dart';
 
 void main() {
-  runApp(AnimationList());
+  runApp(JsonLoginApp());
+  //runApp(SqliteListState());
   //runApp(LoginApp());
 }
 
