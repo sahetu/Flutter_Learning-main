@@ -6,6 +6,7 @@ import 'package:fluttertoast/fluttertoast.dart';
 import 'package:my_app/home.dart';
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:http/http.dart' as http;
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:my_app/jsonProfile.dart';
 import 'package:my_app/jsonSignup.dart';
 import 'package:my_app/siteConstant.dart';
@@ -184,6 +185,9 @@ class JsonLoginAppState extends State<JsonLoginStatefulApp>{
   }
   
   LoginData(String sEmail, String sPassword) async {
+
+    var sp = await SharedPreferences.getInstance();
+
     var map = {
       "email" : sEmail,
       "password" : sPassword
@@ -197,6 +201,20 @@ class JsonLoginAppState extends State<JsonLoginStatefulApp>{
         gravity: ToastGravity.BOTTOM,
         msg:jsonData["message"], 
         toastLength: Toast.LENGTH_LONG);
+
+        var i=0;
+        for(i=0;i<jsonData["UserData"].length;i++){
+          var sId = jsonData["UserData"][i]["userId"];
+          var sName = jsonData["UserData"][i]["name"];
+          var sEmail = jsonData["UserData"][i]["email"];
+          var sContact = jsonData["UserData"][i]["contact"];
+
+          sp.setString(SiteConstant.USERID, sId);
+          sp.setString(SiteConstant.NAME, sName);
+          sp.setString(SiteConstant.EMAIL, sEmail);
+          sp.setString(SiteConstant.CONTACT, sContact);
+
+        }
 
         Navigator.push(context, MaterialPageRoute(builder: (_) => JsonProfileApp()));
 

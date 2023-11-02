@@ -15,7 +15,7 @@ import 'package:my_app/login.dart';
 import 'package:my_app/sqliteDatabaseDemo.dart';
 
 void main() {
-  runApp(JsonLoginApp());
+  runApp(SplashDemo());
   //runApp(SqliteListState());
   //runApp(LoginApp());
 }

@@ -2,8 +2,11 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:my_app/NavigationDrawerDemo.dart';
+import 'package:my_app/jsonLogin.dart';
+import 'package:my_app/jsonProfile.dart';
 import 'package:my_app/siteConstant.dart';
 import 'package:my_app/tabDemo.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class SplashDemo extends StatelessWidget{
 
@@ -34,8 +37,15 @@ class SplashApp extends State<SplashState>{
   }
 
   Future<Timer> startTimerMethod() async {
+    var sp = await SharedPreferences.getInstance();
     return new Timer(Duration(seconds: 3), () { 
-      Navigator.push(context, MaterialPageRoute(builder: (context) => TabDemo()));
+      var sId = sp.getString(SiteConstant.USERID) ?? '';
+      if(sId == ''){
+        Navigator.push(context, MaterialPageRoute(builder: (context) => JsonLoginApp()));
+      }
+      else{
+        Navigator.push(context, MaterialPageRoute(builder: (context) => JsonProfileApp()));
+      }
     });
   }
 
