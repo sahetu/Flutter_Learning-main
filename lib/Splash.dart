@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:my_app/NavigationDrawerDemo.dart';
 import 'package:my_app/jsonLogin.dart';
 import 'package:my_app/jsonProfile.dart';
+import 'package:my_app/notificationDemo.dart';
 import 'package:my_app/siteConstant.dart';
 import 'package:my_app/tabDemo.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -40,12 +41,13 @@ class SplashApp extends State<SplashState>{
     var sp = await SharedPreferences.getInstance();
     return new Timer(Duration(seconds: 3), () { 
       var sId = sp.getString(SiteConstant.USERID) ?? '';
-      if(sId == ''){
-        Navigator.push(context, MaterialPageRoute(builder: (context) => JsonLoginApp()));
-      }
-      else{
-        Navigator.push(context, MaterialPageRoute(builder: (context) => JsonProfileApp()));
-      }
+      Navigator.push(context, MaterialPageRoute(builder: (context) => NotificationMainApp()));
+      // if(sId == ''){
+      //   Navigator.push(context, MaterialPageRoute(builder: (context) => JsonLoginApp()));
+      // }
+      // else{
+      //   Navigator.push(context, MaterialPageRoute(builder: (context) => JsonProfileApp()));
+      // }
     });
   }
 

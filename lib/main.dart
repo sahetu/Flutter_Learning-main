@@ -1,3 +1,5 @@
+import 'package:firebase_core/firebase_core.dart';
+import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:my_app/DatePickerDemo.dart';
 import 'package:my_app/NavigationDrawerDemo.dart';
@@ -12,10 +14,12 @@ import 'package:my_app/jsonLogin.dart';
 import 'package:my_app/jsonSignup.dart';
 import 'package:my_app/list.dart';
 import 'package:my_app/login.dart';
+import 'package:my_app/notificationDemo.dart';
 import 'package:my_app/sqliteDatabaseDemo.dart';
 
 void main() {
-  runApp(SplashDemo());
+  runApp(NotificationMainApp());
+  //runApp(SplashDemo());
   //runApp(SqliteListState());
   //runApp(LoginApp());
 }
