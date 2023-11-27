@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.my_app-mergeDebugResources-27:/values-nl/values-nl.xml",
+            "outputFile": "com.example.my_app-mergeDebugResources-31:/values-nl/values-nl.xml",
             "map": [
                 {
                     "source": "C:\\Users\\defde\\.gradle\\caches\\transforms-3\\e21db1234a9286c1d8706c647467c3bd\\transformed\\jetified-play-services-base-18.0.1\\res\\values-nl\\values.xml",
@@ -35,6 +35,23 @@
                         "startOffsets": "1814",
                         "endColumns": "142",
                         "endOffsets": "1952"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\defde\\.gradle\\caches\\transforms-3\\22ad518183981977892eddbba6a9df20\\transformed\\jetified-play-services-wallet-18.1.3\\res\\values-nl\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "202",
+                        "endColumns": "71",
+                        "endOffsets": "273"
+                    },
+                    "to": {
+                        "startLines": "28",
+                        "startColumns": "4",
+                        "startOffsets": "3192",
+                        "endColumns": "75",
+                        "endOffsets": "3263"
                     }
                 },
                 {

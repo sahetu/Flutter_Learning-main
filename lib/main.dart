@@ -18,8 +18,8 @@ import 'package:my_app/notificationDemo.dart';
 import 'package:my_app/sqliteDatabaseDemo.dart';
 
 void main() {
-  runApp(NotificationMainApp());
-  //runApp(SplashDemo());
+  //runApp(NotificationMainApp());
+  runApp(SplashDemo());
   //runApp(SqliteListState());
   //runApp(LoginApp());
 }

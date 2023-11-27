@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:my_app/NavigationDrawerDemo.dart';
+import 'package:my_app/addPaymentGateway.dart';
 import 'package:my_app/jsonLogin.dart';
 import 'package:my_app/jsonProfile.dart';
 import 'package:my_app/notificationDemo.dart';
@@ -41,7 +42,8 @@ class SplashApp extends State<SplashState>{
     var sp = await SharedPreferences.getInstance();
     return new Timer(Duration(seconds: 3), () { 
       var sId = sp.getString(SiteConstant.USERID) ?? '';
-      Navigator.push(context, MaterialPageRoute(builder: (context) => NotificationMainApp()));
+      //Navigator.push(context, MaterialPageRoute(builder: (context) => NotificationMainApp()));
+      Navigator.push(context, MaterialPageRoute(builder: (context) => MyHomePage()));
       // if(sId == ''){
       //   Navigator.push(context, MaterialPageRoute(builder: (context) => JsonLoginApp()));
       // }
